@@ -12,10 +12,48 @@ html {
 
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
+  line-height: 20px;
 }
 
 main {
   margin: 0 auto;
   max-width: 1500px;
   padding: 20px;
+}
+h1, h2 {
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card {
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: #aaa;
+  max-width: 470px;
+  max-height: 320px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+}
+.card--1 {
+  order: -1
+}
+img {
+  width: 150px;
+  padding-right: 20px;
+}
+ul {
+  list-style-type: none;
+  font-weight: bold;
+}
+.card > div {
+  display: flex;
+  align-content: space-between;
 }
