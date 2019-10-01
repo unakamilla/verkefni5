@@ -2,19 +2,16 @@
   margin: 0;
   padding: 0;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 html {
   box-sizing: border-box;
-
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+  word-break: break-word;
 }
-
 main {
   margin: 0 auto;
   max-width: 1500px;
@@ -39,24 +36,24 @@ h1, h2 {
   max-width: 470px;
   max-height: 320px;
   margin-bottom: 10px;
-  overflow-y: auto;
+  overflow: auto;
   overflow-wrap: break-word;
-  overflow-x: wrap;
 }
 .card--first {
   order: -1
 }
 img {
-  width: 150px;
+  max-width: 150px;
   padding-right: 20px;
 }
 ul {
   display: flex;
   list-style-type: none;
   font-weight: bold;
+  align-content: space-between;
 }
 li {
-  padding-right: 5px;
+  padding-right: 7px;
 }
 .card > div {
   display: flex;
